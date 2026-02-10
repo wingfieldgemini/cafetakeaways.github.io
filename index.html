@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Grind Café — Wellington's Favourite Neighbourhood Café & Eatery</title>
+    <meta name="description" content="The Daily Grind Café on Cuba Street, Wellington. Serving the best flat whites, house-made cabinet food, and wholesome breakfast & lunch daily.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Grain Overlay -->
+    <div class="grain-overlay" aria-hidden="true"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <!-- ===================== NAVIGATION ===================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-icon">☕</span>
+                <div class="logo-text">
+                    <span class="logo-name">The Daily Grind</span>
+                    <span class="logo-sub">Café & Eatery</span>
+                </div>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="#order" class="nav-cta">Order Online</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <!-- Steam particles -->
+            <canvas class="steam-canvas" id="steamCanvas" aria-hidden="true"></canvas>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge reveal-up">
+                <span class="badge-dot"></span>
+                Est. 2014 — Cuba Street, Wellington
+            </div>
+            <h1 class="hero-title">
+                <span class="reveal-up" style="--delay:.1s">The Daily</span>
+                <span class="reveal-up gradient-text" style="--delay:.25s">Grind Café</span>
+            </h1>
+            <p class="hero-tagline reveal-up" style="--delay:.4s">Wellington's Favourite Neighbourhood Café & Eatery</p>
+            <p class="hero-sub reveal-up" style="--delay:.5s">Home of the best flat white on Cuba Street. Locally roasted beans, house-made cabinet food, and wholesome breakfast & lunch — crafted with love since 2014.</p>
+            <div class="hero-ctas reveal-up" style="--delay:.6s">
+                <a href="#menu" class="btn btn-primary">View Our Menu</a>
+                <a href="#order" class="btn btn-outline">Order for Pickup</a>
+            </div>
+            <div class="hero-hours reveal-up" style="--delay:.75s">
+                <span class="hours-icon">🕐</span>
+                <span>Open today: Mon–Fri 6:30am – 4:00pm</span>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator" aria-hidden="true">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+        <!-- Curved divider -->
+        <svg class="section-curve" viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path d="M0,80 C360,120 720,20 1080,80 C1260,110 1380,60 1440,80 L1440,120 L0,120 Z" fill="var(--bg-primary)"/>
+        </svg>
+    </section>
+
+    <!-- ===================== FEATURED / SPECIALS ===================== -->
+    <section class="specials" id="specials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label reveal-up">What's On</span>
+                <h2 class="section-title reveal-up">Today's <span class="gradient-text">Highlights</span></h2>
+                <p class="section-desc reveal-up">Fresh picks from our kitchen and cabinet — here's what our regulars are loving right now.</p>
+            </div>
+            <div class="specials-grid">
+                <!-- Card 1 -->
+                <div class="special-card reveal-up" style="--delay:.1s">
+                    <div class="special-badge">Today's Special</div>
+                    <div class="special-image">
+                        <div class="special-image-placeholder">
+                            <span>🥐</span>
+                        </div>
+                    </div>
+                    <div class="special-content">
+                        <h3>Smoked Salmon Eggs Benny</h3>
+                        <p>Free-range poached eggs on toasted sourdough with Ora King salmon, hollandaise, capers & fresh dill.</p>
+                        <div class="special-footer">
+                            <span class="special-price">$24.50</span>
+                            <div class="dietary-icons">
+                                <span class="dietary-tag" title="Gluten Free option">GF</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="special-card reveal-up" style="--delay:.2s">
+                    <div class="special-badge best">Best Seller</div>
+                    <div class="special-image">
+                        <div class="special-image-placeholder">
+                            <span>☕</span>
+                        </div>
+                    </div>
+                    <div class="special-content">
+                        <h3>The Daily Grind Flat White</h3>
+                        <p>Double-shot flat white with our signature house blend — locally roasted by Coffee Supreme right here in Welly.</p>
+                        <div class="special-footer">
+                            <span class="special-price">$5.50</span>
+                            <div class="dietary-icons">
+                                <span class="dietary-tag" title="Dairy Free oat milk option">DF</span>
+                                <span class="dietary-tag" title="Vegan option">VG</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="special-card reveal-up" style="--delay:.3s">
+                    <div class="special-badge new">New on Menu</div>
+                    <div class="special-image">
+                        <div class="special-image-placeholder">
+                            <span>🥑</span>
+                        </div>
+                    </div>
+                    <div class="special-content">
+                        <h3>Korean Fried Chicken Bao</h3>
+                        <p>Crispy KFC bao buns with gochujang glaze, pickled daikon, coriander & sesame. Served with kumara fries.</p>
+                        <div class="special-footer">
+                            <span class="special-price">$19.50</span>
+                            <div class="dietary-icons">
+                                <span class="dietary-tag" title="Dairy Free">DF</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg class="section-curve" viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path d="M0,40 C480,120 960,0 1440,60 L1440,120 L0,120 Z" fill="var(--bg-secondary)"/>
+        </svg>
+    </section>
+
+    <!-- ===================== MENU ===================== -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label reveal-up">Our Menu</span>
+                <h2 class="section-title reveal-up">Crafted with <span class="gradient-text">Love</span></h2>
+                <p class="section-desc reveal-up">Everything made fresh daily in our Cuba Street kitchen. Fair trade coffee, locally sourced ingredients, house-made goodness.</p>
+            </div>
+
+            <!-- Menu Filter Tabs -->
+            <div class="menu-tabs reveal-up">
+                <button class="menu-tab active" data-category="all">All</button>
+                <button class="menu-tab" data-category="coffee">☕ Coffee & Hot</button>
+                <button class="menu-tab" data-category="cold">🥤 Cold Drinks</button>
+                <button class="menu-tab" data-category="breakfast">🥐 Breakfast</button>
+                <button class="menu-tab" data-category="lunch">🥪 Lunch</button>
+                <button class="menu-tab" data-category="cabinet">🍰 Cabinet</button>
+            </div>
+
+            <!-- Coffee & Hot Drinks -->
+            <div class="menu-category" data-cat="coffee">
+                <h3 class="menu-cat-title reveal-up"><span>☕</span> Coffee & Hot Drinks</h3>
+                <div class="menu-grid">
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Flat White <span class="menu-star">★ House Fav</span></h4>
+                            <span class="menu-price">$5.50</span>
+                        </div>
+                        <p>Double-shot Coffee Supreme blend, velvety micro-foam. The one that put us on the map.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">DF</span><span class="dietary-tag">VG</span></div>
+                    </div>
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Long Black</h4>
+                            <span class="menu-price">$5.00</span>
+                        </div>
+                        <p>Double-shot over hot water. Clean, bold, no-nonsense.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">VG</span><span class="dietary-tag">GF</span><span class="dietary-tag">DF</span></div>
+                    </div>
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Cappuccino</h4>
+                            <span class="menu-price">$5.50</span>
+                        </div>
+                        <p>Rich espresso, steamed milk, thick foam. Dusted with chocolate.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">DF</span></div>
+                    </div>
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Chai Latte</h4>
+                            <span class="menu-price">$6.00</span>
+                        </div>
+                        <p>House-spiced chai blend with steamed milk. Warming and aromatic.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">V</span><span class="dietary-tag">DF</span></div>
+                    </div>
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Hot Chocolate</h4>
+                            <span class="menu-price">$5.50</span>
+                        </div>
+                        <p>Whittaker's dark chocolate melted into steamed milk. Topped with marshmallows.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">V</span></div>
+                    </div>
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Mocha</h4>
+                            <span class="menu-price">$6.00</span>
+                        </div>
+                        <p>Espresso meets Whittaker's chocolate. The best of both worlds.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">V</span></div>
+                    </div>
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Matcha Latte</h4>
+                            <span class="menu-price">$6.50</span>
+                        </div>
+                        <p>Ceremonial-grade Japanese matcha whisked with your choice of milk.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">VG</span><span class="dietary-tag">GF</span><span class="dietary-tag">DF</span></div>
+                    </div>
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Pot of Tea</h4>
+                            <span class="menu-price">$5.00</span>
+                        </div>
+                        <p>T2 loose-leaf tea — English Breakfast, Earl Grey, Green, Peppermint, or Chamomile.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">VG</span><span class="dietary-tag">GF</span><span class="dietary-tag">DF</span></div>
+                    </div>
+                </div>
+                <p class="menu-note">☝ Alt milks +$0.80 — Oat, Almond, Soy, Coconut. Extra shot +$0.70. Decaf available.</p>
+            </div>
+
+            <!-- Cold Drinks -->
+            <div class="menu-category" data-cat="cold">
+                <h3 class="menu-cat-title reveal-up"><span>🥤</span> Cold Drinks</h3>
+                <div class="menu-grid">
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Iced Coffee</h4>
+                            <span class="menu-price">$7.00</span>
+                        </div>
+                        <p>Double-shot espresso over ice with cold milk and a scoop of vanilla ice cream.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">V</span></div>
+                    </div>
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Iced Long Black</h4>
+                            <span class="menu-price">$5.50</span>
+                        </div>
+                        <p>Double-shot over ice. Simple and strong.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">VG</span><span class="dietary-tag">GF</span><span class="dietary-tag">DF</span></div>
+                    </div>
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Berry Smoothie</h4>
+                            <span class="menu-price">$9.50</span>
+                        </div>
+                        <p>Mixed berries, banana, yoghurt, honey, and oat milk. Thick and refreshing.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">V</span><span class="dietary-tag">GF</span></div>
+                    </div>
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Green Machine Smoothie</h4>
+                            <span class="menu-price">$10.00</span>
+                        </div>
+                        <p>Spinach, mango, banana, ginger, coconut water. Your daily greens sorted.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">VG</span><span class="dietary-tag">GF</span><span class="dietary-tag">DF</span></div>
+                    </div>
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Fresh Orange Juice</h4>
+                            <span class="menu-price">$7.50</span>
+                        </div>
+                        <p>Freshly squeezed to order. Nothing else.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">VG</span><span class="dietary-tag">GF</span><span class="dietary-tag">DF</span></div>
+                    </div>
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Soft Drinks / Sparkling</h4>
+                            <span class="menu-price">$4.50</span>
+                        </div>
+                        <p>Karma Cola, Lemon & Paeroa, Ginger Beer, Sparkling Water.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">VG</span><span class="dietary-tag">GF</span><span class="dietary-tag">DF</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Breakfast -->
+            <div class="menu-category" data-cat="breakfast">
+                <h3 class="menu-cat-title reveal-up"><span>🥐</span> Breakfast</h3>
+                <p class="menu-cat-sub reveal-up">Served until 2:00pm daily</p>
+                <div class="menu-grid">
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Eggs Benedict</h4>
+                            <span class="menu-price">$22.00</span>
+                        </div>
+                        <p>Free-range poached eggs, hollandaise, spinach on toasted sourdough. Add bacon $4 or salmon $6.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">GF</span></div>
+                    </div>
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Avocado on Toast</h4>
+                            <span class="menu-price">$19.50</span>
+                        </div>
+                        <p>Smashed avo, cherry tomatoes, feta, dukkah, poached egg on thick-cut sourdough.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">V</span><span class="dietary-tag">GF</span></div>
+                    </div>
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>The Big Breakfast</h4>
+                            <span class="menu-price">$26.00</span>
+                        </div>
+                        <p>Two eggs your way, streaky bacon, pork sausage, grilled tomato, mushrooms, hash brown, sourdough toast.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">GF</span></div>
+                    </div>
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Granola Bowl</h4>
+                            <span class="menu-price">$16.00</span>
+                        </div>
+                        <p>House-made toasted granola, coconut yoghurt, seasonal fruit, manuka honey, toasted seeds.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">V</span><span class="dietary-tag">VG</span><span class="dietary-tag">GF</span><span class="dietary-tag">DF</span></div>
+                    </div>
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Buttermilk Pancakes</h4>
+                            <span class="menu-price">$19.00</span>
+                        </div>
+                        <p>Fluffy stack with fresh berries, maple syrup, whipped cream & toasted almonds.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">V</span></div>
+                    </div>
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Mushrooms on Toast</h4>
+                            <span class="menu-price">$18.50</span>
+                        </div>
+                        <p>Garlic sautéed field mushrooms, thyme, truffle oil, poached egg on sourdough.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">V</span><span class="dietary-tag">VG</span><span class="dietary-tag">DF</span></div>
+                    </div>
+                </div>
+                <p class="menu-note">☝ Gluten-free bread available +$2. Sides: bacon $4, egg $3, avocado $4, halloumi $5.</p>
+            </div>
+
+            <!-- Lunch -->
+            <div class="menu-category" data-cat="lunch">
+                <h3 class="menu-cat-title reveal-up"><span>🥪</span> Lunch</h3>
+                <p class="menu-cat-sub reveal-up">Served from 11:00am daily</p>
+                <div class="menu-grid">
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Grilled Chicken Sandwich</h4>
+                            <span class="menu-price">$18.50</span>
+                        </div>
+                        <p>Free-range chicken, bacon, avocado, aioli, mesclun on ciabatta. With garden salad.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">DF</span></div>
+                    </div>
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>The Daily Grind Burger</h4>
+                            <span class="menu-price">$21.00</span>
+                        </div>
+                        <p>Angus beef patty, cheddar, caramelised onion, pickles, house sauce. With thick-cut fries.</p>
+                        <div class="dietary-icons"></div>
+                    </div>
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Fish & Chips</h4>
+                            <span class="menu-price">$22.00</span>
+                        </div>
+                        <p>Beer-battered tarakihi, thick-cut fries, tartare sauce, lemon, garden salad.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">DF</span></div>
+                    </div>
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Caesar Salad</h4>
+                            <span class="menu-price">$19.00</span>
+                        </div>
+                        <p>Cos lettuce, bacon, parmesan, croutons, poached egg, house-made caesar dressing. Add chicken $5.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">GF</span></div>
+                    </div>
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Soup of the Day</h4>
+                            <span class="menu-price">$14.00</span>
+                        </div>
+                        <p>House-made seasonal soup with crusty sourdough. Ask our staff for today's flavour.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">V</span><span class="dietary-tag">VG</span><span class="dietary-tag">GF</span><span class="dietary-tag">DF</span></div>
+                    </div>
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Halloumi & Kumara Bowl</h4>
+                            <span class="menu-price">$20.00</span>
+                        </div>
+                        <p>Roasted kumara, grilled halloumi, quinoa, roasted veges, rocket, tahini dressing.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">V</span><span class="dietary-tag">GF</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cabinet Food -->
+            <div class="menu-category" data-cat="cabinet">
+                <h3 class="menu-cat-title reveal-up"><span>🍰</span> Cabinet Food</h3>
+                <p class="menu-cat-sub reveal-up">All baked fresh daily in-house — grab one with your coffee!</p>
+                <div class="menu-grid">
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Blueberry Muffin</h4>
+                            <span class="menu-price">$6.00</span>
+                        </div>
+                        <p>Bursting with fresh blueberries. Warm from the oven every morning.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">V</span></div>
+                    </div>
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Date Scone</h4>
+                            <span class="menu-price">$5.50</span>
+                        </div>
+                        <p>Classic Kiwi date scone with butter. Just like Nana used to make.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">V</span></div>
+                    </div>
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Caramel Slice</h4>
+                            <span class="menu-price">$6.50</span>
+                        </div>
+                        <p>Buttery shortbread base, thick caramel, dark chocolate topping. Dangerously good.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">V</span></div>
+                    </div>
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Banana Bread</h4>
+                            <span class="menu-price">$7.00</span>
+                        </div>
+                        <p>Dense, moist, walnut-studded. Served warm with butter.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">V</span></div>
+                    </div>
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Lemon & Poppyseed Cake</h4>
+                            <span class="menu-price">$7.50</span>
+                        </div>
+                        <p>Zesty lemon cake with cream cheese icing. Light and heavenly.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">V</span></div>
+                    </div>
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Savoury Muffin</h4>
+                            <span class="menu-price">$6.50</span>
+                        </div>
+                        <p>Cheese, bacon & herb. Changes daily — ask our team!</p>
+                        <div class="dietary-icons"></div>
+                    </div>
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Croissant</h4>
+                            <span class="menu-price">$5.50</span>
+                        </div>
+                        <p>Flaky, buttery, golden. Plain or with ham & cheese (+$2).</p>
+                        <div class="dietary-icons"><span class="dietary-tag">V</span></div>
+                    </div>
+                    <div class="menu-item reveal-up">
+                        <div class="menu-item-header">
+                            <h4>Brownie</h4>
+                            <span class="menu-price">$7.00</span>
+                        </div>
+                        <p>Rich, fudgy, Whittaker's dark chocolate. Gluten-free and absolutely deadly.</p>
+                        <div class="dietary-icons"><span class="dietary-tag">V</span><span class="dietary-tag">GF</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-legend reveal-up">
+                <span class="dietary-tag">V</span> Vegetarian
+                <span class="dietary-tag">VG</span> Vegan
+                <span class="dietary-tag">GF</span> Gluten Free option
+                <span class="dietary-tag">DF</span> Dairy Free option
+            </div>
+        </div>
+        <svg class="section-curve" viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path d="M0,60 C240,120 480,0 720,60 C960,120 1200,20 1440,80 L1440,120 L0,120 Z" fill="var(--bg-primary)"/>
+        </svg>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images reveal-left">
+                    <div class="about-img-main">
+                        <div class="img-placeholder">
+                            <span>📸</span>
+                            <p>Café Interior</p>
+                        </div>
+                    </div>
+                    <div class="about-img-small">
+                        <div class="img-placeholder">
+                            <span>☕</span>
+                            <p>Latte Art</p>
+                        </div>
+                    </div>
+                    <div class="about-experience">
+                        <span class="exp-number counter" data-target="10">0</span>
+                        <span class="exp-text">Years on<br>Cuba Street</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-label reveal-up">Our Story</span>
+                    <h2 class="section-title reveal-up">More Than Just <span class="gradient-text">Great Coffee</span></h2>
+                    <p class="reveal-up">The Daily Grind started in 2014 with one simple idea: make Cuba Street's best flat white, and treat every customer like whānau. A decade later, we're still here — still grinding, still loving what we do.</p>
+                    <p class="reveal-up">We're proudly locally owned by Sarah & Tom Mitchell, who left the corporate world to follow their passion for good food, great coffee, and Wellington's legendary café culture. What started as a tiny hole-in-the-wall has grown into one of Te Aro's most loved neighbourhood spots.</p>
+                    <div class="about-values reveal-up">
+                        <div class="value-item">
+                            <span class="value-icon">🌿</span>
+                            <div>
+                                <h4>Locally Sourced</h4>
+                                <p>We partner with Wellington producers — from Coffee Supreme beans to Bread & Butter Bakery sourdough.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">🤝</span>
+                            <div>
+                                <h4>Fair Trade</h4>
+                                <p>All our coffee is ethically sourced and fairly traded. Good coffee shouldn't cost the earth.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">🍞</span>
+                            <div>
+                                <h4>House-Made</h4>
+                                <p>Everything in our cabinet is baked fresh in-house every single morning. No shortcuts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team -->
+            <div class="team-section">
+                <h3 class="section-title text-center reveal-up">Meet the <span class="gradient-text">Team</span></h3>
+                <div class="team-grid">
+                    <div class="team-card reveal-up" style="--delay:.1s">
+                        <div class="team-photo"><div class="img-placeholder"><span>👩‍🍳</span></div></div>
+                        <h4>Sarah Mitchell</h4>
+                        <span class="team-role">Co-Owner & Head Chef</span>
+                    </div>
+                    <div class="team-card reveal-up" style="--delay:.2s">
+                        <div class="team-photo"><div class="img-placeholder"><span>👨‍🍳</span></div></div>
+                        <h4>Tom Mitchell</h4>
+                        <span class="team-role">Co-Owner & Head Barista</span>
+                    </div>
+                    <div class="team-card reveal-up" style="--delay:.3s">
+                        <div class="team-photo"><div class="img-placeholder"><span>🧑‍🍳</span></div></div>
+                        <h4>Aroha Ngata</h4>
+                        <span class="team-role">Senior Barista</span>
+                    </div>
+                    <div class="team-card reveal-up" style="--delay:.4s">
+                        <div class="team-photo"><div class="img-placeholder"><span>👨‍🍳</span></div></div>
+                        <h4>Jake Chen</h4>
+                        <span class="team-role">Sous Chef</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-bar reveal-up">
+                <div class="stat-item">
+                    <span class="stat-number counter" data-target="10">0</span>
+                    <span class="stat-label">Years Open</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number"><span class="counter" data-target="500">0</span>K+</span>
+                    <span class="stat-label">Coffees Served</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number"><span class="counter" data-target="15">0</span>K+</span>
+                    <span class="stat-label">Happy Customers</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number counter" data-target="4.8">0</span>
+                    <span class="stat-label">Google Rating ★</span>
+                </div>
+            </div>
+        </div>
+        <svg class="section-curve" viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path d="M0,80 C360,20 720,100 1080,40 C1260,10 1380,80 1440,40 L1440,120 L0,120 Z" fill="var(--bg-secondary)"/>
+        </svg>
+    </section>
+
+    <!-- ===================== GALLERY ===================== -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label reveal-up">Gallery</span>
+                <h2 class="section-title reveal-up">A Taste of <span class="gradient-text">Daily Grind</span></h2>
+                <p class="section-desc reveal-up">From the first flat white to the last slice of cake — here's a peek behind the counter.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-tall reveal-up" style="--delay:.05s">
+                    <div class="img-placeholder"><span>☕</span><p>Latte Art</p></div>
+                    <div class="gallery-overlay"><span>Coffee</span></div>
+                </div>
+                <div class="gallery-item reveal-up" style="--delay:.1s">
+                    <div class="img-placeholder"><span>🥐</span><p>Eggs Benny</p></div>
+                    <div class="gallery-overlay"><span>Breakfast</span></div>
+                </div>
+                <div class="gallery-item reveal-up" style="--delay:.15s">
+                    <div class="img-placeholder"><span>🍰</span><p>Cabinet Display</p></div>
+                    <div class="gallery-overlay"><span>Cabinet</span></div>
+                </div>
+                <div class="gallery-item reveal-up" style="--delay:.2s">
+                    <div class="img-placeholder"><span>🏠</span><p>Interior Vibes</p></div>
+                    <div class="gallery-overlay"><span>Interior</span></div>
+                </div>
+                <div class="gallery-item gallery-wide reveal-up" style="--delay:.25s">
+                    <div class="img-placeholder"><span>🥪</span><p>Lunch Spread</p></div>
+                    <div class="gallery-overlay"><span>Lunch</span></div>
+                </div>
+                <div class="gallery-item reveal-up" style="--delay:.3s">
+                    <div class="img-placeholder"><span>👨‍🍳</span><p>Our Team</p></div>
+                    <div class="gallery-overlay"><span>Team</span></div>
+                </div>
+                <div class="gallery-item reveal-up" style="--delay:.35s">
+                    <div class="img-placeholder"><span>☕</span><p>Pour Over</p></div>
+                    <div class="gallery-overlay"><span>Coffee</span></div>
+                </div>
+                <div class="gallery-item gallery-tall reveal-up" style="--delay:.4s">
+                    <div class="img-placeholder"><span>🌿</span><p>Cuba Street</p></div>
+                    <div class="gallery-overlay"><span>Interior</span></div>
+                </div>
+            </div>
+            <div class="instagram-cta reveal-up">
+                <p>Follow us for daily specials & behind the scenes</p>
+                <a href="#" class="btn btn-outline">📸 @thedailygrindwelly on Instagram</a>
+            </div>
+        </div>
+        <svg class="section-curve" viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path d="M0,40 C480,100 960,0 1440,60 L1440,120 L0,120 Z" fill="var(--bg-primary)"/>
+        </svg>
+    </section>
+
+    <!-- ===================== REVIEWS ===================== -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label reveal-up">Reviews</span>
+                <h2 class="section-title reveal-up">What Wellington <span class="gradient-text">Loves About Us</span></h2>
+                <p class="section-desc reveal-up">Don't just take our word for it — 4.8 stars on Google with over 400 reviews.</p>
+            </div>
+            <div class="reviews-carousel" id="reviewsCarousel">
+                <div class="reviews-track" id="reviewsTrack">
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p>"Hands down the best flat white in Wellington. I've been coming here every morning for 3 years and the consistency is unreal. Tom knows my order before I even reach the counter."</p>
+                        <div class="review-author">
+                            <div class="review-avatar">M</div>
+                            <div>
+                                <strong>Mark Thompson</strong>
+                                <span>Google Review · 2 weeks ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p>"The cabinet food here is INCREDIBLE. Everything baked fresh daily — the caramel slice is dangerous, and the date scones are the best I've had outside of my grandmother's kitchen."</p>
+                        <div class="review-author">
+                            <div class="review-avatar">S</div>
+                            <div>
+                                <strong>Sophie Williams</strong>
+                                <span>Google Review · 1 month ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p>"My go-to spot on Cuba Street. The Big Breakfast is massive and worth every dollar. Staff are genuinely lovely — you feel like part of the whānau every time you walk in."</p>
+                        <div class="review-author">
+                            <div class="review-avatar">R</div>
+                            <div>
+                                <strong>Reuben Patel</strong>
+                                <span>TripAdvisor · 3 weeks ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p>"Visited from Auckland and now I understand the Wellington café hype. The Smoked Salmon Benny was restaurant quality at café prices. Already planning my next trip just for this place."</p>
+                        <div class="review-author">
+                            <div class="review-avatar">L</div>
+                            <div>
+                                <strong>Lisa Chang</strong>
+                                <span>Google Review · 1 week ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">★★★★☆</div>
+                        <p>"Cozy atmosphere, great food, excellent coffee. Can get busy on weekend mornings but that's because it's just that good. The granola bowl with coconut yoghurt is my weekly treat."</p>
+                        <div class="review-author">
+                            <div class="review-avatar">J</div>
+                            <div>
+                                <strong>James O'Brien</strong>
+                                <span>Google Review · 2 months ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" aria-label="Previous review" id="prevReview">‹</button>
+                    <div class="carousel-dots" id="carouselDots"></div>
+                    <button class="carousel-btn next" aria-label="Next review" id="nextReview">›</button>
+                </div>
+            </div>
+        </div>
+        <svg class="section-curve" viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path d="M0,80 C360,120 720,20 1080,80 C1260,110 1380,60 1440,80 L1440,120 L0,120 Z" fill="var(--bg-secondary)"/>
+        </svg>
+    </section>
+
+    <!-- ===================== CONTACT / ORDER ===================== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label reveal-up">Get in Touch</span>
+                <h2 class="section-title reveal-up">Visit Us or <span class="gradient-text">Order Ahead</span></h2>
+                <p class="section-desc reveal-up">Pop in to say kia ora, or skip the queue and order online for pickup.</p>
+            </div>
+
+            <!-- Order Online Banner -->
+            <div class="order-banner reveal-up" id="order">
+                <div class="order-banner-content">
+                    <h3>🚀 Skip the Queue — Order for Pickup</h3>
+                    <p>Order your coffee and food online and we'll have it ready when you arrive. No waiting, no fuss.</p>
+                    <a href="#" class="btn btn-primary btn-lg">Order Online Now</a>
+                </div>
+                <div class="delivery-badges">
+                    <a href="#" class="delivery-badge">
+                        <span>🟢</span> Find us on Uber Eats
+                    </a>
+                    <a href="#" class="delivery-badge">
+                        <span>🔴</span> Order via DoorDash
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper reveal-left">
+                    <h3>Send Us a Message</h3>
+                    <p>Catering enquiry? Feedback? Just want to say hi? Drop us a line.</p>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="formName" placeholder=" " required>
+                            <label for="formName">Your Name</label>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="email" id="formEmail" placeholder=" " required>
+                                <label for="formEmail">Email Address</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="formPhone" placeholder=" ">
+                                <label for="formPhone">Phone (optional)</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="formMessage" rows="4" placeholder=" " required></textarea>
+                            <label for="formMessage">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info reveal-right">
+                    <div class="info-card">
+                        <h4>📍 Find Us</h4>
+                        <p>56 Cuba Street<br>Te Aro, Wellington 6011</p>
+                        <div class="map-placeholder">
+                            <span>🗺️</span>
+                            <p>Google Maps Embed</p>
+                            <a href="#" class="btn btn-outline btn-sm">Get Directions</a>
+                        </div>
+                    </div>
+
+                    <div class="info-card hours-card">
+                        <h4>🕐 Opening Hours</h4>
+                        <div class="hours-list">
+                            <div class="hours-row"><span>Monday</span><span>6:30am – 4:00pm</span></div>
+                            <div class="hours-row"><span>Tuesday</span><span>6:30am – 4:00pm</span></div>
+                            <div class="hours-row"><span>Wednesday</span><span>6:30am – 4:00pm</span></div>
+                            <div class="hours-row"><span>Thursday</span><span>6:30am – 4:00pm</span></div>
+                            <div class="hours-row"><span>Friday</span><span>6:30am – 4:00pm</span></div>
+                            <div class="hours-row weekend"><span>Saturday</span><span>7:30am – 3:00pm</span></div>
+                            <div class="hours-row weekend"><span>Sunday</span><span>7:30am – 3:00pm</span></div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>📞 Contact</h4>
+                        <p><a href="tel:+6445550789">+64 4 555 0789</a></p>
+                        <p><a href="mailto:hello@thedailygrindwellington.co.nz">hello@thedailygrindwellington.co.nz</a></p>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-icon">☕</span>
+                        <div class="logo-text">
+                            <span class="logo-name">The Daily Grind</span>
+                            <span class="logo-sub">Café & Eatery</span>
+                        </div>
+                    </div>
+                    <p>Wellington's favourite neighbourhood café on Cuba Street. Locally owned, locally loved since 2014.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#menu">Our Menu</a>
+                    <a href="#about">About Us</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#order">Order Online</a>
+                </div>
+                <div class="footer-hours">
+                    <h4>Opening Hours</h4>
+                    <p>Mon – Fri: 6:30am – 4:00pm</p>
+                    <p>Sat – Sun: 7:30am – 3:00pm</p>
+                    <p class="footer-address">📍 56 Cuba Street, Te Aro<br>Wellington 6011</p>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay in the Loop</h4>
+                    <p>Get weekly specials and news straight to your inbox.</p>
+                    <form class="newsletter-form" onsubmit="return false;">
+                        <input type="email" placeholder="Your email" aria-label="Email for newsletter">
+                        <button type="submit" class="btn btn-primary">→</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 The Daily Grind Café. All rights reserved.</p>
+                <p class="footer-credit">Website designed by <a href="https://wingfieldgemini.github.io" target="_blank" rel="noopener">WingfieldGemini</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
