@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us — The Daily Grind Café</title>
+    <meta name="description" content="Our story, team, and values. The Daily Grind Café — locally owned on Cuba Street, Wellington since 2014.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="grain-overlay" aria-hidden="true"></div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">☕</span>
+                <div class="logo-text">
+                    <span class="logo-name">The Daily Grind</span>
+                    <span class="logo-sub">Café & Eatery</span>
+                </div>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="contact.html#order" class="nav-cta">Order Online</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height:40vh">
+        <div class="hero-bg"><div class="hero-gradient"></div></div>
+        <div class="hero-content">
+            <nav class="breadcrumb reveal-up" aria-label="Breadcrumb">
+                <a href="index.html">Home</a> <span>/</span> <span>About</span>
+            </nav>
+            <h1 class="hero-title"><span class="reveal-up gradient-text">About Us</span></h1>
+            <p class="hero-sub reveal-up">Our story, our team, our values.</p>
+        </div>
+        <svg class="section-curve" viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path d="M0,80 C360,120 720,20 1080,80 C1260,110 1380,60 1440,80 L1440,120 L0,120 Z" fill="var(--bg-primary)"/>
+        </svg>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images reveal-left">
+                    <div class="about-img-main">
+                        <div class="img-placeholder"><span>📸</span><p>Café Interior</p></div>
+                    </div>
+                    <div class="about-img-small">
+                        <div class="img-placeholder"><span>☕</span><p>Latte Art</p></div>
+                    </div>
+                    <div class="about-experience">
+                        <span class="exp-number counter" data-target="10">0</span>
+                        <span class="exp-text">Years on<br>Cuba Street</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-label reveal-up">Our Story</span>
+                    <h2 class="section-title reveal-up">More Than Just <span class="gradient-text">Great Coffee</span></h2>
+                    <p class="reveal-up">The Daily Grind started in 2014 with one simple idea: make Cuba Street's best flat white, and treat every customer like whānau. A decade later, we're still here — still grinding, still loving what we do.</p>
+                    <p class="reveal-up">We're proudly locally owned by Sarah & Tom Mitchell, who left the corporate world to follow their passion for good food, great coffee, and Wellington's legendary café culture. What started as a tiny hole-in-the-wall has grown into one of Te Aro's most loved neighbourhood spots.</p>
+                    <div class="about-values reveal-up">
+                        <div class="value-item">
+                            <span class="value-icon">🌿</span>
+                            <div>
+                                <h4>Locally Sourced</h4>
+                                <p>We partner with Wellington producers — from Coffee Supreme beans to Bread & Butter Bakery sourdough.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">🤝</span>
+                            <div>
+                                <h4>Fair Trade</h4>
+                                <p>All our coffee is ethically sourced and fairly traded. Good coffee shouldn't cost the earth.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">🍞</span>
+                            <div>
+                                <h4>House-Made</h4>
+                                <p>Everything in our cabinet is baked fresh in-house every single morning. No shortcuts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team -->
+            <div class="team-section">
+                <h3 class="section-title text-center reveal-up">Meet the <span class="gradient-text">Team</span></h3>
+                <div class="team-grid">
+                    <div class="team-card reveal-up" style="--delay:.1s">
+                        <div class="team-photo"><div class="img-placeholder"><span>👩‍🍳</span></div></div>
+                        <h4>Sarah Mitchell</h4>
+                        <span class="team-role">Co-Owner & Head Chef</span>
+                    </div>
+                    <div class="team-card reveal-up" style="--delay:.2s">
+                        <div class="team-photo"><div class="img-placeholder"><span>👨‍🍳</span></div></div>
+                        <h4>Tom Mitchell</h4>
+                        <span class="team-role">Co-Owner & Head Barista</span>
+                    </div>
+                    <div class="team-card reveal-up" style="--delay:.3s">
+                        <div class="team-photo"><div class="img-placeholder"><span>🧑‍🍳</span></div></div>
+                        <h4>Aroha Ngata</h4>
+                        <span class="team-role">Senior Barista</span>
+                    </div>
+                    <div class="team-card reveal-up" style="--delay:.4s">
+                        <div class="team-photo"><div class="img-placeholder"><span>👨‍🍳</span></div></div>
+                        <h4>Jake Chen</h4>
+                        <span class="team-role">Sous Chef</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-bar reveal-up">
+                <div class="stat-item">
+                    <span class="stat-number counter" data-target="10">0</span>
+                    <span class="stat-label">Years Open</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number"><span class="counter" data-target="500">0</span>K+</span>
+                    <span class="stat-label">Coffees Served</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number"><span class="counter" data-target="15">0</span>K+</span>
+                    <span class="stat-label">Happy Customers</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number counter" data-target="4.8">0</span>
+                    <span class="stat-label">Google Rating ★</span>
+                </div>
+            </div>
+        </div>
+        <svg class="section-curve" viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path d="M0,80 C360,20 720,100 1080,40 C1260,10 1380,80 1440,40 L1440,120 L0,120 Z" fill="var(--bg-secondary)"/>
+        </svg>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-icon">☕</span>
+                        <div class="logo-text">
+                            <span class="logo-name">The Daily Grind</span>
+                            <span class="logo-sub">Café & Eatery</span>
+                        </div>
+                    </div>
+                    <p>Wellington's favourite neighbourhood café on Cuba Street. Locally owned, locally loved since 2014.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+                        <a href="#" class="social-link" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Our Menu</a>
+                    <a href="about.html">About Us</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="reviews.html">Reviews</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-hours">
+                    <h4>Opening Hours</h4>
+                    <p>Mon – Fri: 6:30am – 4:00pm</p>
+                    <p>Sat – Sun: 7:30am – 3:00pm</p>
+                    <p class="footer-address">📍 56 Cuba Street, Te Aro<br>Wellington 6011</p>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay in the Loop</h4>
+                    <p>Get weekly specials and news straight to your inbox.</p>
+                    <form class="newsletter-form" onsubmit="return false;">
+                        <input type="email" placeholder="Your email" aria-label="Email for newsletter">
+                        <button type="submit" class="btn btn-primary">→</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 The Daily Grind Café. All rights reserved.</p>
+                <p class="footer-credit">Designed by <a href="https://wingfieldgemini.github.io" target="_blank" rel="noopener">WingfieldGemini</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>

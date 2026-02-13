@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — The Daily Grind Café</title>
+    <meta name="description" content="Contact The Daily Grind Café on Cuba Street, Wellington. Order online, get directions, or send us a message.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="grain-overlay" aria-hidden="true"></div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">☕</span>
+                <div class="logo-text">
+                    <span class="logo-name">The Daily Grind</span>
+                    <span class="logo-sub">Café & Eatery</span>
+                </div>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <a href="#order" class="nav-cta">Order Online</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height:40vh">
+        <div class="hero-bg"><div class="hero-gradient"></div></div>
+        <div class="hero-content">
+            <nav class="breadcrumb reveal-up" aria-label="Breadcrumb">
+                <a href="index.html">Home</a> <span>/</span> <span>Contact</span>
+            </nav>
+            <h1 class="hero-title"><span class="reveal-up gradient-text">Contact Us</span></h1>
+            <p class="hero-sub reveal-up">Pop in, order ahead, or drop us a line.</p>
+        </div>
+        <svg class="section-curve" viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path d="M0,80 C360,120 720,20 1080,80 C1260,110 1380,60 1440,80 L1440,120 L0,120 Z" fill="var(--bg-primary)"/>
+        </svg>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <!-- Order Online Banner -->
+            <div class="order-banner reveal-up" id="order">
+                <div class="order-banner-content">
+                    <h3>🚀 Skip the Queue — Order for Pickup</h3>
+                    <p>Order your coffee and food online and we'll have it ready when you arrive. No waiting, no fuss.</p>
+                    <a href="#" class="btn btn-primary btn-lg">Order Online Now</a>
+                </div>
+                <div class="delivery-badges">
+                    <a href="#" class="delivery-badge"><span>🟢</span> Find us on Uber Eats</a>
+                    <a href="#" class="delivery-badge"><span>🔴</span> Order via DoorDash</a>
+                </div>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper reveal-left">
+                    <h3>Send Us a Message</h3>
+                    <p>Catering enquiry? Feedback? Just want to say hi? Drop us a line.</p>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="formName" placeholder=" " required>
+                            <label for="formName">Your Name</label>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="email" id="formEmail" placeholder=" " required>
+                                <label for="formEmail">Email Address</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="formPhone" placeholder=" ">
+                                <label for="formPhone">Phone (optional)</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="formMessage" rows="4" placeholder=" " required></textarea>
+                            <label for="formMessage">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info reveal-right">
+                    <div class="info-card">
+                        <h4>📍 Find Us</h4>
+                        <p>56 Cuba Street<br>Te Aro, Wellington 6011</p>
+                        <div class="map-placeholder">
+                            <span>🗺️</span>
+                            <p>Google Maps Embed</p>
+                            <a href="#" class="btn btn-outline btn-sm">Get Directions</a>
+                        </div>
+                    </div>
+
+                    <div class="info-card hours-card">
+                        <h4>🕐 Opening Hours</h4>
+                        <div class="hours-list">
+                            <div class="hours-row"><span>Monday</span><span>6:30am – 4:00pm</span></div>
+                            <div class="hours-row"><span>Tuesday</span><span>6:30am – 4:00pm</span></div>
+                            <div class="hours-row"><span>Wednesday</span><span>6:30am – 4:00pm</span></div>
+                            <div class="hours-row"><span>Thursday</span><span>6:30am – 4:00pm</span></div>
+                            <div class="hours-row"><span>Friday</span><span>6:30am – 4:00pm</span></div>
+                            <div class="hours-row weekend"><span>Saturday</span><span>7:30am – 3:00pm</span></div>
+                            <div class="hours-row weekend"><span>Sunday</span><span>7:30am – 3:00pm</span></div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>📞 Contact</h4>
+                        <p><a href="tel:+6445550789">+64 4 555 0789</a></p>
+                        <p><a href="mailto:hello@thedailygrindwellington.co.nz">hello@thedailygrindwellington.co.nz</a></p>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-icon">☕</span>
+                        <div class="logo-text">
+                            <span class="logo-name">The Daily Grind</span>
+                            <span class="logo-sub">Café & Eatery</span>
+                        </div>
+                    </div>
+                    <p>Wellington's favourite neighbourhood café on Cuba Street. Locally owned, locally loved since 2014.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+                        <a href="#" class="social-link" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Our Menu</a>
+                    <a href="about.html">About Us</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="reviews.html">Reviews</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-hours">
+                    <h4>Opening Hours</h4>
+                    <p>Mon – Fri: 6:30am – 4:00pm</p>
+                    <p>Sat – Sun: 7:30am – 3:00pm</p>
+                    <p class="footer-address">📍 56 Cuba Street, Te Aro<br>Wellington 6011</p>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay in the Loop</h4>
+                    <p>Get weekly specials and news straight to your inbox.</p>
+                    <form class="newsletter-form" onsubmit="return false;">
+                        <input type="email" placeholder="Your email" aria-label="Email for newsletter">
+                        <button type="submit" class="btn btn-primary">→</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 The Daily Grind Café. All rights reserved.</p>
+                <p class="footer-credit">Designed by <a href="https://wingfieldgemini.github.io" target="_blank" rel="noopener">WingfieldGemini</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>
