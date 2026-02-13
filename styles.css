@@ -1452,6 +1452,7 @@ body.cursor-hover .cursor-dot {
     .nav-cta { display: none; }
     .hamburger { display: flex; }
 
+    .hero { min-height: auto; padding: 140px 0 80px; }
     .hero-title { font-size: clamp(2.4rem, 10vw, 3.5rem); }
 
     .specials-grid { grid-template-columns: 1fr; }
